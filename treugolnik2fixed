@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+class Corner
+{
+private:
+int x;
+public:
+Corner(int valueX)
+{
+x=valueX;
+}
+void check(int a, int b, int d, int c)
+{
+
+d=a+b+c;
+
+if(d!=x)
+printf("This triangle is not exist");
+else
+printf("This triangle is exist");
+}
+};
+int main()
+{
+int a, b, d, c;
+scanf("%d",&a);
+scanf("%d",&b);
+scanf("%d",&c);
+Corner x(180);
+x.check(a,b,d,c);
+
+}
